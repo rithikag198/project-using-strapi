@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getBlogPostBySlug } from '@/lib/api';
 import Navbar from '@/components/Navbar-client';
-import Footer from '@/components/Footer';
 import Image from 'next/image';
 
 interface PageProps {
@@ -104,8 +103,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           </a>
         </div>
       </article>
-      
-      <Footer />
     </div>
   );
 }

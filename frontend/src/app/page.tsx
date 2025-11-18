@@ -15,7 +15,7 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-              Hi, I'm <span className="text-yellow-300">G.Rithika</span>
+              Hi, I'm <span className="text-yellow-300">Rithika</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">
               Welcome to Our Blog - Discover amazing stories, insights, and tutorials from my expert writing journey
@@ -88,7 +88,7 @@ export default function Home() {
               Let's Connect & Grow Together
             </h2>
             <p className="text-lg mb-8 opacity-90">
-              Subscribe to my newsletter and never miss a post. I share insights about technology, programming, and digital innovation - curated by <span className="text-yellow-300 font-semibold">G.Rithika</span>
+              Subscribe to my newsletter and never miss a post. I share insights about technology, programming, and digital innovation - curated by <span className="text-yellow-300 font-semibold">Rithika</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
               <input 
@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="w-24 h-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
                   GR
                 </div>
-                <h3 className="text-2xl font-bold mb-2">About <span className="text-purple-600">G.Rithika</span></h3>
+                <h3 className="text-2xl font-bold mb-2">About <span className="text-purple-600">Rithika</span></h3>
                 <p className="text-gray-600">Content Creator | Tech Enthusiast | Digital Storyteller</p>
               </div>
               <p className="text-gray-700 text-center mb-6">

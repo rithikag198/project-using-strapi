@@ -8,7 +8,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About <span className="text-yellow-300">G.Rithika</span>
+              About <span className="text-yellow-300">Rithika</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
               Content Creator | Tech Enthusiast | Digital Storyteller
@@ -27,7 +27,7 @@ export default function About() {
                 <div className="w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
                   GR
                 </div>
-                <h2 className="text-3xl font-bold mb-4">Hi, I'm <span className="text-purple-600">G.Rithika</span></h2>
+                <h2 className="text-3xl font-bold mb-4">Hi, I'm <span className="text-purple-600">Rithika</span></h2>
                 <p className="text-gray-600 text-lg mb-6">
                   Passionate content creator with a love for technology and digital storytelling
                 </p>
@@ -51,7 +51,7 @@ export default function About() {
               <div className="mb-12">
                 <h3 className="text-2xl font-bold mb-6 text-purple-600">My Journey</h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Welcome to my digital space! I'm G.Rithika, a passionate content creator who loves exploring the 
+                  Welcome to my digital space! I'm Rithika, a passionate content creator who loves exploring the 
                   intersection of technology, creativity, and storytelling. My journey began with a curiosity about how 
                   things work and evolved into a passion for sharing knowledge with others.
                 </p>
