@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: strapi-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_CLIENT
+        value: sqlite
+      - key: DATABASE_FILENAME
+        value: .tmp/data.db
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 1337
+      - key: APP_KEYS
+        value: "toBeModified1,toBeModified2"
+      - key: API_TOKEN_SALT
+        value: tobemodified
+      - key: ADMIN_JWT_SECRET
+        value: tobemodified
+      - key: TRANSFER_TOKEN_SALT
+        value: tobemodified
+      - key: JWT_SECRET
+        value: tobemodified
+      - key: ENCRYPTION_KEY
+        value: tobemodified
+    autoDeploy: true
