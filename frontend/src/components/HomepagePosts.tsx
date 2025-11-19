@@ -8,16 +8,16 @@ export default function HomepagePosts() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:1337/api/blog-posts?populate=*')
-      .then(res => res.json())
-      .then(data => {
-        setPosts(data.data || []);
+    // Use static data
+    import('@/lib/api').then(({ getBlogPosts }) => {
+      getBlogPosts().then(data => {
+        setPosts(data);
         setLoading(false);
-      })
-      .catch(error => {
+      }).catch(error => {
         console.error('Error fetching posts:', error);
         setLoading(false);
       });
+    });
   }, []);
 
   if (loading) {

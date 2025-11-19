@@ -34,14 +34,8 @@ interface PostCardProps {
 }
 
 export default function PostCard({ post }: PostCardProps) {
-  const imageUrl = post.image?.[0]?.url;
   const category = post.category;
   const tags = post.tags;
-
-  // Generate full image URL with backend base URL
-  const getFullImageUrl = (url: string | undefined) => {
-    return url ? `http://localhost:1337${url}` : null;
-  };
 
   // Generate placeholder image URL based on post title
   const getPlaceholderImage = (title: string) => {
@@ -49,7 +43,7 @@ export default function PostCard({ post }: PostCardProps) {
     return `https://via.placeholder.com/1200x600/6366f1/ffffff?text=` + encodeURIComponent(title);
   };
 
-  const finalImageUrl = getFullImageUrl(imageUrl) || getPlaceholderImage(post.title);
+  const finalImageUrl = getPlaceholderImage(post.title);
 
   return (
     <div className="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
