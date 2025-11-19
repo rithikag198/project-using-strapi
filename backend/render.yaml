@@ -3,8 +3,8 @@ services:
     name: strapi-backend
     env: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm run start
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
@@ -17,15 +17,15 @@ services:
       - key: PORT
         value: 1337
       - key: APP_KEYS
-        value: "toBeModified1,toBeModified2"
+        value: "your-app-key-1,your-app-key-2,your-app-key-3"
       - key: API_TOKEN_SALT
-        value: tobemodified
+        value: your-token-salt
       - key: ADMIN_JWT_SECRET
-        value: tobemodified
+        value: your-jwt-secret
       - key: TRANSFER_TOKEN_SALT
-        value: tobemodified
+        value: your-transfer-salt
       - key: JWT_SECRET
-        value: tobemodified
+        value: your-jwt-secret
       - key: ENCRYPTION_KEY
-        value: tobemodified
+        value: your-encryption-key
     autoDeploy: true
