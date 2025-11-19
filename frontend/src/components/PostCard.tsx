@@ -7,29 +7,23 @@ interface PostCardProps {
     slug: string;
     description?: string;
     content?: string;
-    author?: string;
-    published_at?: string;
+    author?: {
+      id: number;
+      name: string;
+      email: string;
+    };
+    publishedAt?: string;
     category?: {
       id: number;
       name: string;
       slug: string;
     };
-    tags?: Array<{
+    tags?: {
       id: number;
       name: string;
       slug: string;
-    }>;
-    image?: Array<{
-      id: number;
-      name: string;
-      url: string;
-      formats?: {
-        thumbnail?: { url: string };
-        small?: { url: string };
-        medium?: { url: string };
-        large?: { url: string };
-      };
-    }>;
+    }[];
+    image?: any;
   };
 }
 
@@ -103,14 +97,14 @@ export default function PostCard({ post }: PostCardProps) {
         <div className="flex items-center justify-between text-sm text-gray-500">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
-            <span>{post.author}</span>
+            <span>{post.author?.name}</span>
           </div>
-          {post.published_at && (
+          {post.publishedAt && (
             <div className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span>{new Date(post.published_at).toLocaleDateString()}</span>
+              <span>{new Date(post.publishedAt).toLocaleDateString()}</span>
             </div>
           )}
         </div>
