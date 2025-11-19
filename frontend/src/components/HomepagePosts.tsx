@@ -1,5 +1,3 @@
-'use client';
-
 import { getBlogPosts } from '@/lib/api';
 import PostCard from './PostCard';
 
