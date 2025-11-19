@@ -11,11 +11,11 @@ services:
       - key: DATABASE_CLIENT
         value: postgres
       - key: DATABASE_URL
-        sync: false
+        value: postgresql://strapi_postgres_7iyb_user:GsSY4yakOHvy5z4oS5ZD4vPCDi5n1J94@dpg-d4e8n4fpm1nc738mm6gg-a/strapi_postgres_7iyb
       - key: HOST
         value: 0.0.0.0
       - key: PORT
-        value: 1337
+        value: {{PORT}}
       - key: APP_KEYS
         value: "lwoh8gra6j,31lgna6sg0e,0pwt6myif8wh"
       - key: API_TOKEN_SALT
