@@ -1,16 +1,16 @@
 FROM node:18-alpine
 
-# Set working directory
-WORKDIR /app
+# Set working directory to backend
+WORKDIR /app/backend
 
 # Copy package files
-COPY package*.json ./
+COPY backend/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy source code
-COPY . .
+COPY backend/ ./
 
 # Build Strapi
 RUN npm run build
