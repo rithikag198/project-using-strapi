@@ -8,7 +8,8 @@ const posts = [
     author: { id: 1, name: "John Doe", email: "john@example.com" },
     publishedAt: "2024-01-15",
     category: { id: 1, name: "React", slug: "react" },
-    tags: [{ id: 1, name: "javascript", slug: "javascript" }, { id: 2, name: "frontend", slug: "frontend" }]
+    tags: [{ id: 1, name: "javascript", slug: "javascript" }, { id: 2, name: "frontend", slug: "frontend" }],
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop"
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const posts = [
     author: { id: 2, name: "Jane Smith", email: "jane@example.com" },
     publishedAt: "2024-01-20",
     category: { id: 2, name: "TypeScript", slug: "typescript" },
-    tags: [{ id: 3, name: "types", slug: "types" }, { id: 4, name: "programming", slug: "programming" }]
+    tags: [{ id: 3, name: "types", slug: "types" }, { id: 4, name: "programming", slug: "programming" }],
+    image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=400&fit=crop"
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const posts = [
     author: { id: 3, name: "Mike Johnson", email: "mike@example.com" },
     publishedAt: "2024-01-25",
     category: { id: 3, name: "Node.js", slug: "nodejs" },
-    tags: [{ id: 5, name: "backend", slug: "backend" }, { id: 6, name: "api", slug: "api" }]
+    tags: [{ id: 5, name: "backend", slug: "backend" }, { id: 6, name: "api", slug: "api" }],
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop"
   }
 ];
 
