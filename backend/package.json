@@ -10,7 +10,7 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "NODE_ENV=production strapi start",
     "start:prod": "NODE_ENV=production strapi start",
     "postinstall": "strapi build",
     "vercel-build": "strapi build",
