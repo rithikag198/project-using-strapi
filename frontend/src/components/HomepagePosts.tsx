@@ -8,7 +8,7 @@ export default function HomepagePosts() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:1337/api/blog-posts?populate=*')
+    fetch('https://project-using-strapi.vercel.app/api/blog-posts?populate=*')
       .then(res => res.json())
       .then(data => {
         setPosts(data.data || []);
