@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'https://project-using-strapi.vercel.app';
+const API_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 export interface Category {
   id: number;

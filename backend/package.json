@@ -11,6 +11,7 @@
     "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
+    "postinstall": "strapi build",
     "vercel-build": "strapi build",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
