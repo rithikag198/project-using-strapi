@@ -9,23 +9,23 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_CLIENT
-        value: sqlite
-      - key: DATABASE_FILENAME
-        value: .tmp/data.db
+        value: postgres
+      - key: DATABASE_URL
+        sync: false
       - key: HOST
         value: 0.0.0.0
       - key: PORT
         value: 1337
       - key: APP_KEYS
-        value: "your-app-key-1,your-app-key-2,your-app-key-3"
+        value: "lwoh8gra6j,31lgna6sg0e,0pwt6myif8wh"
       - key: API_TOKEN_SALT
-        value: your-token-salt
+        value: 4i0cnhf7y6s
       - key: ADMIN_JWT_SECRET
-        value: your-jwt-secret
+        value: bpdu1i0hnle
       - key: TRANSFER_TOKEN_SALT
-        value: your-transfer-salt
+        value: eycfqg7e15s
       - key: JWT_SECRET
-        value: your-jwt-secret
+        value: 6lyau8i08m
       - key: ENCRYPTION_KEY
-        value: your-encryption-key
+        value: 1ig48zy8svq
     autoDeploy: true
