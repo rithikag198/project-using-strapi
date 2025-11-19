@@ -5,7 +5,9 @@ export default ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   cors: {
-    origin: ['http://localhost:3000', 'http://localhost:3001'],
+    origin: env('NODE_ENV') === 'production' 
+      ? true 
+      : ['http://localhost:3000', 'http://localhost:3001'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     headers: ['Content-Type', 'Authorization'],
     credentials: true,
